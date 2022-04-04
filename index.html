@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL ESTATE</title>
+    <!-- link css & js & fontawesome -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="fontawesome-5.15.4/css/all.css" />
+
+    <!-- card carousel -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">bất động sản</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">liên hệ</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <div class="form-group has-search">
+                    <span class="fas fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control search-input" placeholder="Tìm kiếm">
+                </div>
+                <div class="btn-announce">
+                    <i class="far fa-bell"></i>
+                </div>
+            </form>     
+            </div>
+        </div>
+    </nav>
+    <div class="search-content">
+        <div class="container-fluid ">     
+            <div class="row">
+                <div class="col-12 col-sm-2 col-md-12 col-lg-4 search-content-block">
+                    <div class="title-content">
+                        <div class="first-text">Let's find</div>
+                        <div class="second-text">yours Dream..</div>
+                        <div class="third-text">Building award winning properties across <br> London UK and the All world</div>
+                    </div>
+                    <div class="main-search">
+                        <div class="three-action">
+                            <a href="" class="buy-action active">Mua</a>
+                            <a href="" class="sell-action">Bán</a>
+                            <a href="" class="rent-action">Cho thuê</a>
+                        </div>
+                        <div class="search-field">
+                                <div class="city-field">
+                                    <p>City/Street</p> 
+                                    <div class="select-box">
+                                        <div class="select-box__current" tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="" value="" name="city" checked="checked"/>
+                                                <p class="select-box__input-text">Thành phố</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="city-0" value="1" name="city" />
+                                                <p class="select-box__input-text">Cream</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="city-1" value="2" name="city"/>
+                                                <p class="select-box__input-text">TP. Hồ Chí Minh</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="city-2" value="3" name="city"/>
+                                                <p class="select-box__input-text">Milk</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="city-3" value="4" name="city"/>
+                                                <p class="select-box__input-text">Honey</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="city-4" value="5" name="city"/>
+                                                <p class="select-box__input-text">Toast</p>
+                                            </div>
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label class="select-box__option" for="city-0" aria-hidden="aria-hidden">Cream</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="city-1" aria-hidden="aria-hidden">TP. Hồ Chí Minh</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="city-2" aria-hidden="aria-hidden">Milk</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="city-3" aria-hidden="aria-hidden">Honey</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="city-4" aria-hidden="aria-hidden">Toast</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="type-field">
+                                    <p>Apartment Type</p>
+                                    <div class="select-box">
+                                        <div class="select-box__current" tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="" value="" name="apartment-type" checked="checked"/>
+                                                <p class="select-box__input-text">Loại</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="type-0" value="1" name="apartment-type"/>
+                                                <p class="select-box__input-text">Cream</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="type-1" value="2" name="apartment-type"/>
+                                                <p class="select-box__input-text">TP. Hồ Chí Minh</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="type-2" value="3" name="apartment-type"/>
+                                                <p class="select-box__input-text">Milk</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="type-3" value="4" name="apartment-type"/>
+                                                <p class="select-box__input-text">Honey</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="type-4" value="5" name="apartment-type"/>
+                                                <p class="select-box__input-text">Toast</p>
+                                            </div>
+                                            <i class="fas fa-sort select-box__icon"></i>
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label class="select-box__option" for="type-0" aria-hidden="aria-hidden">Cream</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="type-1" aria-hidden="aria-hidden">TP. Hồ Chí Minh</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="type-2" aria-hidden="aria-hidden">Milk</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="type-3" aria-hidden="aria-hidden">Honey</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="type-4" aria-hidden="aria-hidden">Toast</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price-field">
+                                    <p>Price Range</p>
+                                    <div class="select-box">
+                                        <div class="select-box__current" tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="" value="" name="price-range" checked="checked"/>
+                                                <p class="select-box__input-text">Khoảng giá</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="price-0" value="1" name="price-range"/>
+                                                <p class="select-box__input-text">Cream</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="price-1" value="2" name="price-range"/>
+                                                <p class="select-box__input-text">TP. Hồ Chí Minh</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="price-2" value="3" name="price-range"/>
+                                                <p class="select-box__input-text">Milk</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="price-3" value="4" name="price-range"/>
+                                                <p class="select-box__input-text">Honey</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="price-4" value="5" name="price-range"/>
+                                                <p class="select-box__input-text">Toast</p>
+                                            </div>
+                                            <i class="fas fa-sort select-box__icon"></i>
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label class="select-box__option" for="price-0" aria-hidden="aria-hidden">Cream</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="price-1" aria-hidden="aria-hidden">TP. Hồ Chí Minh</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="price-2" aria-hidden="aria-hidden">Milk</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="price-3" aria-hidden="aria-hidden">Honey</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="price-4" aria-hidden="aria-hidden">Toast</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="add-option-field">
+                                    <div class="select-box">
+                                        <div class="select-box__current" tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="0" value="0" name="add-option" checked="checked"/>
+                                                <p class="select-box__input-text add-another-option-text">+ Thêm hạng mục</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="add-option-0" value="1" name="add-option" />
+                                                <p class="select-box__input-text">Cream</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="add-option-1" value="2" name="add-option"/>
+                                                <p class="select-box__input-text">TP. Hồ Chí Minh</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="add-option-2" value="3" name="add-option"/>
+                                                <p class="select-box__input-text">Milk</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="add-option-3" value="4" name="add-option"/>
+                                                <p class="select-box__input-text">Honey</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input" type="radio" id="add-option-4" value="5" name="add-option"/>
+                                                <p class="select-box__input-text">Toast</p>
+                                            </div>                                 
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label class="select-box__option" for="add-option-0" aria-hidden="aria-hidden">Cream</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="add-option-1" aria-hidden="aria-hidden">TP. Hồ Chí Minh</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="add-option-2" aria-hidden="aria-hidden">Milk</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="add-option-3" aria-hidden="aria-hidden">Honey</label>
+                                            </li>
+                                            <li>
+                                                <label class="select-box__option" for="add-option-4" aria-hidden="aria-hidden">Toast</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <div class="button-search">
+                                <button class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 col-sm-10 col-lg-8 search-field-background">
+                    <img src="images/bdsTiny.jpg" alt="">
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div class="about-us-content">
+        <div class="container">
+            <div class="row about-us-text-content text-center">
+                <p class="about-us-first-text">Đến với chúng tôi</p>
+                <p class="about-us-second-text">Bạn sẽ có những dự án với những tiêu chí sau</p>
+                <p class="about-us-third-text">Hãy là người đầu tiên chọn chúng</p>
+            </div>
+            <div class="row about-us-images">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="one-img">
+                            <img class="about-us-img" src="images/bdsTiny.jpg" alt="">
+                            <div class="about-us-img-tag text-center">Deluxe Portion <i class="fas fa-check"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="one-img">
+                            <img class="about-us-img " src="images/bdsTiny.jpg" alt="">
+                            <div class="about-us-img-tag text-center">Deluxe Portion</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="one-img">
+                            <img class="about-us-img" src="images/bdsTiny.jpg" alt="">
+                            <div class="about-us-img-tag text-center">Deluxe Portion</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="one-img">
+                            <img class="about-us-img" src="images/bdsTiny.jpg" alt="">
+                            <div class="about-us-img-tag text-center">Deluxe Portion</div>
+                        </div>
+                    </div>
+            </div>
+            <div class="about-us-btn text-center">
+                <button class="btn btn-primary">Continue</button>
+            </div>
+        </div>
+    </div>
+    <div class="popular-content">
+        <div class="container">
+            <div class="row popular-text-content text-center">
+                <p class="popular-first-text">dự án nổi bật</p>
+                <p class="popular-second-text">The Most frequently searched and most popular apartment of the application will be in the list</p>
+                
+            </div>
+            <div class="row popular-images owl-carousel">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="one-popular-img">
+                        <img class="popular-img" src="images/bdsTiny.jpg" alt="">
+                        <div class="popular-top-left-tag">1.2 km away</div>
+                        <div class="popular-top-right-tag">for rent</div>
+                        <div class="popular-bottom-right-tag">
+                            <img class="popular-avatar" src="images/bdsTiny.jpg" alt="" >
+                        </div> 
+                        <div class="popular-place"><i class="fas fa-map-marker-alt"></i>Belmont Gardens, Chicago</div>
+                        <div class="building-name">Studio Apartment</div>
+                        <div class="building-description">Beautiful Huge 1 Family House In Heart Of Westbury Newly <br> Renovated With New Furniture</div>
+                        <div class="building-detail">
+                            <div class="row">
+                                <div class="col-lg-8 building-price">
+                                    <span class="areas"><i class="fab fa-delicious"></i>1776 m²</span>
+                                    <span class="costs"><i class="fas fa-money-bill"></i>2,500 Tỷ</span>
+                                </div>
+                                <div class="col-lg-4 building-tool">
+                                    <a href=""><i class="fas fa-compress"></i></a>  
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="one-popular-img">
+                        <img class="popular-img" src="images/bdsTiny.jpg" alt="">
+                        <div class="popular-top-left-tag">1.2 km away</div>
+                        <div class="popular-top-right-tag">for rent</div>
+                        <div class="popular-bottom-right-tag">
+                            <img class="popular-avatar" src="images/bdsTiny.jpg" alt="" >
+                        </div>
+                        <div class="popular-place"><i class="fas fa-map-marker-alt"></i>Belmont Gardens, Chicago</div>
+                        <div class="building-name">Studio Apartment</div>
+                        <div class="building-description">Beautiful Huge 1 Family House In Heart Of Westbury Newly <br> Renovated With New Furniture</div>
+                        <div class="building-detail">
+                            <div class="row">
+                                <div class="col-lg-8 building-price">
+                                    <span class="areas"><i class="fab fa-delicious"></i>1776 m²</span>
+                                    <span class="costs"><i class="fas fa-money-bill"></i>2,500 Tỷ</span>
+                                </div>
+                                <div class="col-lg-4 building-tool">
+                                    <a href=""><i class="fas fa-compress"></i></a>  
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="one-popular-img">
+                        <img class="popular-img" src="images/bdsTiny.jpg" alt="">
+                        <div class="popular-top-left-tag">1.2 km away</div>
+                        <div class="popular-top-right-tag">for rent</div>
+                        <div class="popular-bottom-right-tag">
+                            <img class="popular-avatar" src="images/bdsTiny.jpg" alt="" >
+                        </div>
+                        <div class="popular-place"><i class="fas fa-map-marker-alt"></i>Belmont Gardens, Chicago</div>
+                        <div class="building-name">Studio Apartment</div>
+                        <div class="building-description">Beautiful Huge 1 Family House In Heart Of Westbury Newly <br> Renovated With New Furniture</div>
+                        <div class="building-detail">
+                            <div class="row">
+                                <div class="col-lg-8 building-price">
+                                    <span class="areas"><i class="fab fa-delicious"></i>1776 m²</span>
+                                    <span class="costs"><i class="fas fa-money-bill"></i>2,500 Tỷ</span>
+                                </div>
+                                <div class="col-lg-4 building-tool">
+                                    <a href=""><i class="fas fa-compress"></i></a>  
+                                    <a href=""><i class="far fa-heart"></i></a>
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="area-content">
+        <div class="container">
+            <div class="row area-top-content text-center">
+                <div class="area-title">Khu Vực</div>
+                <div class="area-position">
+                    <a href="" class="area-position-btn active">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                    <a href="" class="area-position-btn">Bảo Lộc</a>
+                </div>
+            </div>
+            <div class="row area-info">
+                <div class="col-12 col-lg-4 area-info-detail">
+                    <div class="area-info-name">Duc Trong</div>
+                    <div class="area-info-description">
+                        Boasting chic interiors, three private balconies and a remarkable terrace, 
+                        this two bedroom apartment will epitomise complete luxury. Not only will 
+                        residents benefit from a superb location in the heart of Shoreditch, but 
+                        they will also enjoy unrivalled facilities and a 24-hour bespoke concierge.
+                    </div>
+                    <div class="area-info-price">
+                        <p>Đất khu vực trung tâm -  1 tỷ 200 triệu</p>
+                        <p>Đất khu vực trung tâm -  1 tỷ 200 triệu</p>
+                        <p>Đất khu vực trung tâm -  1 tỷ 200 triệu</p>
+                        <p>Đất khu vực trung tâm -  1 tỷ 200 triệu</p>
+                        <p>Đất khu vực trung tâm -  1 tỷ 200 triệu</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 area-info-img-map">
+                    <iframe class="area-info-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250053.88837454803!2d108.2644767!3d11.6878917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171470844806af3%3A0x9ccc1737ce782b00!2zxJDhu6ljIFRy4buNbmcsIEzDom0gxJDhu5NuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1632540539468!5m2!1svi!2s" 
+                        allowfullscreen="" loading="lazy" >
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="apartment-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 apartment-text-content">
+                    <div class="apartment-text-content-title">
+                        Buy <br>
+                        Dream Apartment <br>
+                        In <span>Prime location</span>
+                    </div>
+                    <div class="apartment-text-content-btn">
+                        <button class="btn btn-primary">See All Apartment</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 apartment-img-content">
+                    <img class="apartment-img" src="images/bdsTiny.jpg" alt="">
+                    <video class="apartment-video" controls>
+                        <source src="https://www.youtube.com/watch?v=xNzRdQShjNM" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="apartment-featured-content">
+        <div class="container">
+            <div class="row apartment-featured-text-content text-center">
+                <div class="apartment-featured-title">Apartments</div>
+                <div class="apartment-featured-sub-title">Featured Listings</div>
+            </div>
+            <div class="row mt-5 apartment-featured-detail">
+                <div class="row text-center">
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center active">
+                            <span><i class="fas fa-car"></i></span>
+                            <p>Parking Space</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-swimming-pool"></i></span>
+                            <p>Swimming Pool</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-shield-alt"></i></span>
+                            <p >Private Security</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-clinic-medical"></i></span>
+                            <p>Medical Center</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-4 text-center">
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-clinic-medical"></i></span>
+                            <p>Library Area</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-bed"></i></span>
+                            <p class="apartment-featured-text-icon">King Size Beds</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-laptop-house"></i></span>
+                            <p class="apartment-featured-text-icon">Smart Home</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-3 col-lg-3 one-icon">
+                        <a href="" class="apartment-featured-icons text-center">
+                            <span><i class="fas fa-skating"></i></span>
+                            <p class="apartment-featured-text-icon">Kids Playland</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="asked-content">
+        <!-- phần này chưa sửa id của label và input(2 id này phải trùng nhau) nên đổ dữ liệu bt ra sẽ có lỗi nên lấy id của database quăng zô -->
+        <div class="container">
+            <div class="asked-content-title text-center">Frequently Asked Questions</div>
+            <div class="row asked-detail">
+                <div class="col-12 one-asked">
+                    <label for="read_more" class="asked-main">
+                        What the First Step of the Dream Apartment buying process ? 
+                        <div>
+                            <span class="first-span"><i class="fas fa-plus"></i></span>
+                            <span class="second-span"><i class="fas fa-minus"></i></span>
+                        </div>
+                    </label>        
+                    <div class="asked-show">
+                        <input type="checkbox" class="exp-more" id="read_more" role="button">
+                        <section>
+                            <p>
+                                First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching 
+                                to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-12 one-asked">
+                    <label for="read_more read-more-2" class="asked-main">
+                        How Long does It take to buy Apartment ?
+                        <div>
+                            <span class="first-span"><i class="fas fa-plus"></i></span>
+                            <span class="second-span"><i class="fas fa-minus"></i></span>
+                        </div>
+                    </label> 
+                    <div class="asked-show">
+                        <input type="checkbox" class="exp-more" id="read_more read-more-2" role="button">
+                        <section>
+                            <p>
+                                First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching 
+                                to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-12 one-asked"> 
+                    <label for="read_more read-more-3" class="asked-main">
+                        How much do I need for a down payment ?
+                        <div>
+                            <span class="first-span"><i class="fas fa-plus"></i></span>
+                            <span class="second-span"><i class="fas fa-minus"></i></span>
+                        </div>
+                    </label> 
+                    <div class="asked-show">
+                        <input type="checkbox" class="exp-more" id="read_more read-more-3" role="button">
+                        <section>
+                            <p>
+                                First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching 
+                                to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-12 one-asked">
+                    <label for="read_more read-more-4" class="asked-main">
+                        What is a buyer's market ?
+                        <div>
+                            <span class="first-span"><i class="fas fa-plus"></i></span>
+                            <span class="second-span"><i class="fas fa-minus"></i></span>
+                        </div>
+                    </label> 
+                    <div class="asked-show">
+                        <input type="checkbox" class="exp-more" id="read_more read-more-4" role="button">
+                        <section>
+                            <p>
+                                First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching 
+                                to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-12 one-asked">    
+                    <label for="read_more read-more-5" class="asked-main">
+                        What is popular in  Apartment ?
+                        <div>
+                            <span class="first-span"><i class="fas fa-plus"></i></span>
+                            <span class="second-span"><i class="fas fa-minus"></i></span>
+                        </div>
+                    </label> 
+                    <div class="asked-show">
+                        <input type="checkbox" class="exp-more" id="read_more read-more-5" role="button">
+                        <section>
+                            <p>
+                                First, you need to know how much you can borrow, knowing how much home you can afford narrows down online apartment searching 
+                                to suitable Properties , thus no time is Wasted  considering apartment that are not within your dream and budget.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 text-start">
+                    <div class="footer-logo">Hey Logo</div>
+                    <div class="footer-text">The most beautiful exclusive properties and luxury apartments</div>
+                    <div class="footer-social">
+                        <a href="" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>  
+                        <a href="" class="footer-social-icon active"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="footer-social-icon"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 text-start">
+                    <div class="footer-useful">
+                        <p>Useful Links</p>
+                        <ul class="">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Partners</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 text-start">
+                    <div class="footer-help">
+                        <p>Help?</p>
+                        <ul class="">
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                            <li><a href="">Policy</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 text-start">
+                    <div class="footer-address">
+                        <p>Address</p> 
+                        <ul class="">
+                            <li>113-115 Old Brompton Road</li>
+                            <li>SW7 3LE LONDON, UNITED KINGDOM</li>
+                            <li>website: www.mordern.com</li>
+                            <li>mobie</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 text-lg-start">© Copyright 2021, morden.com</div>
+                <div class="col-sm-6 col-lg-6 text-lg-end">Terms & Condition    |   Privacy Policy</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card images slider -->
+    <script>
+        $(".popular-images").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+    <!-- add row class for search-field -->
+    <script>
+        $(function() {
+        var searchField = $('.search-field');
+     
+                if ($(window).width() < 480) {
+                    searchField.addClass('row');
+                }
+            
+        })
+    </script>
+    <!-- navbar scroll animation -->
+    <script>
+        $(function() {
+        var navbar = $('.navbar');
+        $(window).scroll(function() {
+            if($(window).scrollTop() <= 40){
+                navbar.removeClass('navbar-scroll');
+            }else {
+                navbar.addClass('navbar-scroll');
+            }
+        });
+        });
+    </script>
+</body>
+</html>

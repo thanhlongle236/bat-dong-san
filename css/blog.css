@@ -1,0 +1,624 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.navbar {
+    box-shadow:  0 0 15px #7c7c7c;
+}
+.navbar .navbar-nav {
+    margin-left: 80px;
+}
+.navbar .navbar-nav .nav-item {
+    font-weight: bold;
+    padding: 0px 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #E53737;
+}
+.navbar .has-search {
+    width: 400px;   
+}
+.navbar .has-search input[type="text"] {
+    text-align: right;
+}
+.navbar .has-search .search-input {
+    border: 1px dashed #000;
+    border-radius: 25px;
+}
+.navbar .has-search .form-control {
+    padding-left: 2.375rem;
+}
+.navbar .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    font-size: 16px;
+}
+.navbar .btn-announce {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #e8ebf4;
+    margin-left: 15px;
+    text-align: center;
+}
+.navbar .btn-announce i.fa-bell {
+    color: #60a8fb;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.navbar-scroll {
+    background: rgb(157, 227, 255);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 10px rgba(0, 0 , 0, 0.4);
+    transition-duration: 0.6s;
+}
+.main-slider .carousel .carousel-inner img {
+    width: 100%;
+    height: 400px;
+}
+.main-slider .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.main-slider button.carousel-control-prev, button.carousel-control-next {
+    display: none;
+}
+.news {
+    margin: 20px 0;
+}
+.news .news-block {
+    margin: 15px;
+    border-bottom: 2px solid #707070;;
+}
+.news .news-block .news-img {
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+}
+.news .news-block .news-img-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.news .news-block .news-img-text a {
+    color: #000;
+    text-decoration: none;
+}
+.news .news-block .news-img-text a:hover {
+    color: #1E62E8;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.news .news-block .news-articles-list li{
+    font-size: 16px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+.news .news-block .news-articles-list .news-article {
+    color: #707070;
+}
+.news .news-block .news-articles-list .news-article:hover {
+    color: #1E62E8;
+    transition: 0.2s;
+    font-size: 18px;
+}
+.news .news-block .news-ads-top, .news .news-block .news-ads-bottom {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+.news-date-updated {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #000;
+}
+.news-date-updated .fa-clock {
+    color: #707070;
+    padding-right: 10px;
+}
+.popular-content {
+    margin: 25px 0;
+    background: #FAEDE1;
+}
+.popular-content .popular-text-content {
+    padding-top: 20px;
+}
+.popular-content .popular-text-content .popular-text-content-title {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #2484E5;
+    background: #2484E5;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.popular-content .popular-images .one-popular-img {
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px #888;
+    position: relative;
+    width: 400px;
+    margin: 25px 0;
+    padding: 5px;
+}
+.popular-content .popular-images .popular-img {
+    width: 370px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.popular-content .popular-images .one-popular-img .popular-top-left-tag {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px solid #707070bf;
+    background: #707070bf;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 13px;
+    padding: 5px;
+    font-weight: 600;
+}
+.popular-content .popular-images .one-popular-img .popular-top-right-tag {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 1px solid #78C720;
+    background: #78C720;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 5px;
+    font-weight: 600;
+    
+}
+.popular-content .popular-images .one-popular-img .popular-bottom-right-tag {
+    position: absolute;
+    bottom: 210px;
+    right: 40px;
+}
+.popular-content .popular-images .one-popular-img .popular-bottom-right-tag .popular-avatar  {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: 0 8px 6px 0px #48c1fa;
+}
+.popular-content .popular-images .popular-place {
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #8D9598;
+    font-size: 17px;
+}
+.popular-content .popular-images .popular-place .fa-map-marker-alt {
+    padding-right: 5px;
+    color: #FE7847;
+}
+.popular-content .popular-images .building-name {
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+}
+.popular-content .popular-images .building-description {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #8D9598;
+}
+.popular-content .popular-images .building-detail {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.popular-content .popular-images .building-detail .building-price {
+    border: 1px solid #E0E7F2;
+    background: #E0E7F2;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.popular-content .popular-images .building-detail .building-price .areas {
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #1E62E8;
+    font-weight: bold;
+}
+.popular-content .popular-images .building-detail .building-price .areas .fa-delicious {
+    padding-right: 10px;
+    color: #3b2121;
+}
+.popular-content .popular-images .building-detail .building-price .costs {
+    font-size: 20px;
+    color: #1E62E8;
+    font-weight: bold;
+}
+.popular-content .popular-images .building-detail .building-price .costs .fa-money-bill {
+    padding-right: 10px;
+    color: #3b2121;
+}
+.popular-content .popular-images .building-detail .building-tool {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.popular-content .popular-images .building-detail .building-tool .fa-compress,
+.popular-content .popular-images .building-detail .building-tool .fa-plus-circle {
+    display: inline-block;
+    padding: 7px 8px;
+    border-radius: 10px;
+    background: #EBEBEB;
+    color: #000;
+}
+.popular-content .popular-images .building-detail .building-tool .fa-heart {
+    display: inline-block;
+    padding: 7px 8px;
+    border-radius: 10px;
+    background: #FE7847;
+    color: #fff;
+}
+.area-content {
+    background: #fff;
+    padding: 50px 0;
+}
+.area-content .area-top-content .area-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #14395B;
+}
+.area-content .area-top-content .area-position {
+    margin: 40px 0;
+    border: 2px solid #e4e2e2;
+    padding: 15px;
+    background: #fff;
+}
+.area-content .area-top-content .area-position .area-position-btn{
+    font-size: 20px;
+    color: #FF6363;
+    padding: 0px 10px;
+    text-decoration: none;
+}
+.area-content .area-top-content .area-position .active,
+.area-content .area-top-content .area-position .area-position-btn:hover  {
+    color: #637DFF;
+}
+.area-content .area-info {
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px #888;
+    border-radius: 15px;
+}
+.area-content .area-info .area-info-detail {
+    background: #186AA5;
+    margin: 30px 10px 30px 30px;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.area-content .area-info .area-info-detail .area-info-name {
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+}
+.area-content .area-info .area-info-detail .area-info-price {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 0;
+}
+.area-content .area-info .area-info-detail .area-info-description {
+    font-size: 14px;
+    color: #fff;
+    padding: 30px 0;
+}
+.area-content .area-info .col-lg-8 {
+    width: 60.666667%;
+    padding-bottom: 60px;
+}
+.area-content .area-info .area-info-map {
+    margin: 30px 20px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.footer {
+    background: #14395B;
+    padding: 30px 0;
+    color: #fff;
+}
+.footer .footer-text {
+    font-size: 14px;
+    padding: 30px 0;
+}
+.footer .footer-social .footer-social-icon {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: #fff;
+    color: #94B7DB;
+}
+.footer .footer-social .footer-social-icon:hover,
+.footer .footer-social  a.active {
+    background: #2289FF;
+    color: #fff;
+}
+.footer .footer-useful p, .footer .footer-help p, .footer .footer-address p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer .footer-useful ul, .footer .footer-help ul, .footer .footer-address ul{
+    padding-left: 0;
+}
+.footer .footer-useful ul li, .footer .footer-help ul li, .footer .footer-address ul li{
+    list-style: none;
+    padding: 5px 0;
+    font-size: 14px;
+}
+.footer .footer-useful ul li a, .footer .footer-help ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+}
+.footer .footer-help span {
+    padding: 5px 0;
+}
+.footer-bottom {
+    background: #0B2F50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* responsive for mobile */
+
+@media all and (max-width: 480px) {
+    .navbar {
+        background: rgb(157, 227, 255);
+    }
+    .navbar .navbar-nav {
+        margin-left: 0px;
+    }
+    .navbar .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 16px;  
+    }
+    .navbar .has-search {
+        width: 250px;   
+    }
+    .navbar .btn-announce i.fa-bell {
+        font-size: 16px;
+    }
+    .navbar .navbar-toggler {
+        background-color: #fff;
+    }
+    .main-slider .carousel .carousel-inner img {
+        height: 300px;
+    }
+    .news .news-block {
+        margin: 0px;
+    }
+    .news .news-block .news-img {
+        width: 330px;
+        height: 250px;
+    }
+    .news .news-block .news-img-text {
+        font-size: 16px;
+    }
+    .news .news-block .news-articles-list ul{
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
+    .news .news-block .news-articles-list li {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .news .news-block .news-ads-top, .news .news-block .news-ads-bottom {
+        width: 100%;
+        height: 150px;
+    }
+    .news-date-updated {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+    .popular-content .popular-text-content .popular-text-content-title {
+        padding: 5px 20px;
+        font-size: 22px;
+        width: fit-content;
+        margin: auto;
+    }
+    .area-content .area-top-content .area-position .area-position-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .area-content .area-info .area-info-detail {
+        margin: 10px;
+        padding: 10px;
+        width: fit-content;
+    }
+    .area-content .area-info .area-info-detail .area-info-name {
+        font-size: 28px;
+    }
+    .area-content .area-info .area-info-detail .area-info-price {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .area-content .area-info .area-info-detail .area-info-description {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+    .area-content .area-info .area-info-img-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        height: 200px;
+    }
+    .area-content .area-info .area-info-map {
+        margin: 0;
+    }
+    .footer .footer-useful p, .footer .footer-help p, .footer .footer-address p{
+        margin: 15px 0;
+    }
+}
+@media all and (min-width:481px) and (max-width:768px) {
+    .navbar {
+        background: rgb(157, 227, 255);
+    }
+    .navbar .navbar-nav {
+        margin-left: 0px;
+    }
+    .navbar .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 18px;  
+        float: left;
+    }
+    .navbar .has-search {
+        width: 400px;   
+    }
+    .navbar .btn-announce i.fa-bell {
+        font-size: 18px;
+    }
+    .navbar .navbar-toggler {
+        background-color: #fff;
+    }
+    .news .news-block .news-articles-list ul{
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
+    .news .news-block .news-ads-top, .news .news-block .news-ads-bottom {
+        width: 200px;
+        height: 180px;
+    }
+    .popular-content .popular-text-content .popular-text-content-title {
+        margin-bottom: 0px;
+    }
+    .area-content {
+        padding: 30px 0;
+    }
+    .area-content .area-top-content .area-title {
+        font-size: 35px;
+    }
+    .area-content .area-info .area-info-detail {
+        margin: 10px;
+        padding: 10px;
+        width: fit-content;
+    }
+    .area-content .area-info .area-info-detail .area-info-name {
+        font-size: 28px;
+    }
+    .area-content .area-info .area-info-detail .area-info-price {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .area-content .area-info .area-info-detail .area-info-description {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .area-content .area-info .area-info-img-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        height: 400px;
+    }
+    .area-content .area-info .area-info-map {
+        margin: 0;
+    }
+    .footer .footer-useful p, .footer .footer-help p, .footer .footer-address p{
+        margin: 15px 0;
+    }
+}
+@media all and (min-width:769px) and (max-width: 960px) {
+    .navbar {
+        background: rgb(157, 227, 255);
+    }
+    .navbar .navbar-nav {
+        margin-left: 0px;
+    }
+    .navbar .collapse .navbar-nav .nav-item .nav-link {
+        font-size: 18px;  
+        float: left;
+    }
+    .navbar .has-search {
+        width: 400px;   
+    }
+    .navbar .btn-announce i.fa-bell {
+        font-size: 18px;
+    }
+    .navbar .navbar-toggler {
+        background-color: #fff;
+    }
+    .news .news-block .news-articles-list ul{
+        padding-left: 0px;
+        padding-bottom: 5px;
+    }
+    .news .news-block .news-ads-top, .news .news-block .news-ads-bottom {
+        width: 200px;
+        height: 180px;
+    }
+    .popular-content .popular-text-content .popular-text-content-title {
+        margin-bottom: 0px;
+    }
+    .area-content {
+        padding: 30px 0;
+    }
+    .area-content .area-top-content .area-title {
+        font-size: 35px;
+    }
+    .area-content .area-info .area-info-detail {
+        margin: 10px;
+        padding: 10px;
+        width: fit-content;
+    }
+    .area-content .area-info .area-info-detail .area-info-name {
+        font-size: 28px;
+    }
+    .area-content .area-info .area-info-detail .area-info-price {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .area-content .area-info .area-info-detail .area-info-description {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    .area-content .area-info .area-info-img-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+        height: 400px;
+    }
+    .area-content .area-info .area-info-map {
+        margin: 0;
+    }
+    .footer .footer-useful p, .footer .footer-help p, .footer .footer-address p{
+        margin: 15px 0;
+    }
+}
